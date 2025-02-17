@@ -1,0 +1,189 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage[utf8]{inputenc}  % Added for better character encoding support
+
+% Adjust spacing
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+% Page setup
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margin adjustments
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+% Document settings
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+  \item\small{
+    {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{\small #2} \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & \textbf{\small #2}\\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+% List settings
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\Huge \scshape Manas Kumar Thakur} \\ \vspace{3pt}
+    New Delhi, India \\ \vspace{3pt}
+    \small 
+    \href{tel:+919650376167}{\raisebox{-0.1\height}\faPhone\ \underline{+91 9650376167}} ~
+    \href{mailto:thakurmanas168@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{thakurmanas168@gmail.com}} ~
+    \href{https://www.linkedin.com/in/manasthakur30}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/manasthakur30}} ~
+    \href{https://github.com/Manas-thakur}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/Manas-thakur}}
+    \vspace{-8pt}
+\end{center}
+
+% Education Section
+\section{Education \& Achievements}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Bachelor of Technology in Computer Science(AIML)}{Expected Graduation: 2027}
+    {Dronacharya College of Engineering}{CGPA: 7.5/10}
+\resumeSubHeadingListEnd
+
+% Experience Section
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Backend Developer Intern}{Feb. 2025 -- May 2025}
+    {OSS \& Consulting}{Remote, India}
+    \resumeItemListStart
+      \resumeItem{Designed and optimized relational database architecture to ensure scalability and efficiency.}
+      \resumeItem{Developed and managed database schemas using PostgreSQL, enforcing best practices in normalization and indexing.}
+      \resumeItem{Implemented query optimization techniques, reducing query execution time and improving system performance.}
+      \resumeItem{Designed and developed RESTful APIs for seamless database interactions, ensuring secure and efficient data handling.}
+      \resumeItem{Integrated secure authentication mechanisms, including JWT tokens and OAuth, ensuring data protection.}
+      \resumeItem{Collaborated with backend and cloud teams to streamline data flow across distributed systems using AWS and GCP.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% Technical Projects Section
+\section{Technical Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {\textbf{SIH 2023 - Lithology Project} $|$ Machine Learning, Computer Vision}{December 2023}
+    \resumeItemListStart
+      \resumeItem{Developed an intelligent system for real-time object detection and classification using machine learning and computer vision.}
+      \resumeItem{Utilized a multi-language approach, with the primary codebase in JavaScript, alongside HTML, Python, CSS, Java, Jupyter Notebook, and C++.}
+      \resumeItem{Implemented advanced detection techniques to enhance accuracy and reliability in object classification.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{IDE 2024 - ML for Construction Progress Monitoring} $|$ Deep Learning, OpenCV, Python}{August 2024}
+    \resumeItemListStart
+      \resumeItem{Built a real-time ML-powered system for tracking construction progress through automated image analysis.}
+      \resumeItem{Implemented an anomaly detection module to flag inconsistencies and prevent reporting errors.}
+      \resumeItem{Enhanced efficiency by reducing reliance on manual progress tracking and improving data accuracy.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Buildspace - Pothole Detection and GPS Tagging} $|$ YOLO, OpenCV, GPS API, Python}{September 2024}
+    \resumeItemListStart
+      \resumeItem{Developed a real-time pothole detection system using YOLO and OpenCV to identify road defects.}
+      \resumeItem{Integrated GPS tagging to map detected potholes, providing precise location data for road maintenance teams.}
+      \resumeItem{Optimized the system for deployment in smart city infrastructure to improve road safety.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Building Thoughts - AI-Powered Diary} $|$ Ongoing}{}
+    \resumeItemListStart
+      \resumeItem{Developing an AI-powered diary that interacts with users, responding intelligently to their entries.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% Technical Skills Section
+\section{Technical Skills}
+\resumeSubHeadingListStart
+  \resumeItem{\textbf{Languages:} C, C++, Java, JavaScript, TypeScript, Python, R ,SQL}
+  \resumeItem{\textbf{Machine Learning \& AI:} Deep Learning, Computer Vision, OpenCV, TensorFlow, PyTorch, YOLO}
+  \resumeItem{\textbf{Full-Stack Development:} MERN (MongoDB, Express.js, React.js, Node.js), Next.js, FastAPI}
+  \resumeItem{\textbf{Frontend \& UI/UX:} React.js, Tailwind CSS, Material-UI, Shadcn/ui, Figma}
+  \resumeItem{\textbf{DevOps \& Cloud:} Docker, AWS (EC2, S3, Lambda, CloudFront), Azure, NVIDIA Jetson, CI/CD}
+  \resumeItem{\textbf{Database \& Cache:} PostgreSQL, MongoDB, Redis, LanceDB, Prisma ORM}
+  \resumeItem{\textbf{Tools \& Security:} Git, JWT, OAuth 2.0, Bcrypt, OpenAI API, CUDA}
+\resumeSubHeadingListEnd
+
+% Leadership \& Achievements Section
+\section{Leadership \& Achievements}
+\resumeSubHeadingListStart
+  \resumeItem{\textbf{Smart India Hackathon Winner:} SIH 2023 Winner, Automated lithology classification using AI and deep learning.}
+  \resumeItem{\textbf{Engineers Day Idea Competition()DCE:} Secured second place for designing a fire-resistant system for car accidents.}
+  \resumeItem{\textbf{IDE Bootcamp Selection:} Advanced to Phase 2 at Amity University Rajasthan, collaborating on innovations.}
+  \resumeItem{\textbf{AI Team - Deviators Club:} Worked on AI/ML projects, gaining hands-on experience in advanced technologies.}
+\resumeSubHeadingListEnd
+
+
+\end{document}
