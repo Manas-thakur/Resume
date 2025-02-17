@@ -33,8 +33,8 @@ jobs:
 
       - name: Commit PDF
         run: |
-          git config --local user.email "${{ secrets.GIT_EMAIL }}"
-          git config --local user.name "${{ secrets.GIT_USERNAME }}"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
           git add -A
           git diff-index --quiet HEAD || git commit -m "Updated README.md"
       - name: Pull changes
